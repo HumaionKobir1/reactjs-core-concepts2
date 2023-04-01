@@ -35,6 +35,7 @@ function ExternalUsers(){
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
     .then(data => setUsers(data))
+    console.log(data);
   }, []);
 
   return(
